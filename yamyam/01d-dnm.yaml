@@ -22,6 +22,7 @@ spec:
     metadata:
       labels:
         app: $K8S_JOB_NAME-$K8S_JOB_POSTFIX-dnm
+        appgroup: $K8S_JOB_NAME-$K8S_JOB_POSTFIX
     spec:
       containers:
       - name: dnm
