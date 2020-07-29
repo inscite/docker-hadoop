@@ -218,7 +218,7 @@ spec:
               name: hadoop-env
         ports:
         - containerPort: 50010
-      restartPolicy: Always
+      restartPolicy: OnFailure
 #        volumeMounts:
 #        - name: datanode-volume
 #          mountPath: /hadoop/dfs/data

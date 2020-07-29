@@ -220,4 +220,4 @@ spec:
         ports:
         - containerPort: 9000
         - containerPort: 9870
-      restartPolicy: Always
+      restartPolicy: OnFailure
