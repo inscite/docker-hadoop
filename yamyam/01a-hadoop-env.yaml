@@ -39,6 +39,7 @@ data:
   YARN_CONF_yarn_timeline___service_hostname: historyserver
 kind: ConfigMap
 metadata:
-  name: hadoop-env
+  name: $K8S_JOB_NAME-$K8S_JOB_POSTFIX-env
   labels:
-    app: hadoop-env
+    app: $K8S_JOB_NAME-$K8S_JOB_POSTFIX-env
+    appgroup: $K8S_JOB_NAME-$K8S_JOB_POSTFIX
